@@ -1,0 +1,5 @@
+defaultStorageMapping: GET_DATA
+fileVersion: 1
+locations:
+  - GET_DATA
+  - TARGET
