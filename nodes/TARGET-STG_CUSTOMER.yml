@@ -15,7 +15,12 @@ operation:
   locationName: TARGET
   materializationType: table
   metadata:
-    appliedNodeTests: []
+    appliedNodeTests:
+      - continueOnFailure: true
+        description: ""
+        name: Test
+        runOrder: After
+        templateString: ""
     columns:
       - appliedColumnTests: {}
         columnReference:
@@ -30,7 +35,7 @@ operation:
           - columnReferences:
               - columnCounter: c319189b-e519-469a-aa04-aa42c7ee80b6
                 stepCounter: 6fec2f7d-0612-4b74-8f41-24c69ea276cf
-            transform: ""
+            transform: UPPER("CUSTOMER"."C_CUSTKEY");
       - appliedColumnTests: {}
         columnReference:
           columnCounter: c5dbfa63-bdd3-412e-a089-fa1e688a08e3

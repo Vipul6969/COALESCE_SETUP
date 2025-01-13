@@ -1,6 +1,6 @@
 excludeSelector: ""
 fileVersion: 1
 id: "11"
-includeSelector: ""
+includeSelector: "{ location: GET_DATA name: CUSTOMER } OR { location: GET_DATA name: NATION } OR { location: GET_DATA name: ORDERS } OR { location: GET_DATA name: REGION } OR { location: GET_DATA name: SUPPLIER } OR { location: TARGET name: DIM_CTE_ORDERS } OR { location: TARGET name: DIM_ORDERS } OR { location: TARGET name: DIM_ORDERS01 } OR { location: TARGET name: CTE_ORDERS } OR { location: TARGET name: Last_15Min_ORDERS } OR { location: TARGET name: ListFun_CUSTOMER } OR { location: TARGET name: ListTAGG_ORDERS } OR { location: TARGET name: SUM_ORDER } OR { location: TARGET name: STG_CUSTOMER } OR { location: TARGET name: STG_NATION } OR { location: TARGET name: STG_ORDERS } OR { location: TARGET name: STG_REGION } OR { location: TARGET name: STG_SUPPLIER }"
 name: Complete graph
 type: Job
