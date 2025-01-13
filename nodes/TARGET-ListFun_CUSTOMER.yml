@@ -1,0 +1,42 @@
+fileVersion: 1
+id: bf477c27-7b03-4cdc-8b4d-6183d5d5db25
+name: ListFun_CUSTOMER
+operation:
+  config:
+    insertStrategy: UNION
+    selectDistinct: false
+  database: ""
+  deployEnabled: true
+  description: Customer data as defined by TPC-H
+  isMultisource: false
+  locationName: TARGET
+  materializationType: view
+  metadata:
+    appliedNodeTests: []
+    columns: []
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: |-
+            {{ stage('Override Create SQL') }}
+            	CREATE OR REPLACE VIEW {{ ref('TARGET', 'V_CUSTOMER')}} AS (
+            		SELECT 
+              LISTAGG( C_NAME) AS "Name"
+             FROM {{ ref('TARGET', 'STG_CUSTOMER') }}
+            	)
+        dependencies:
+          - locationName: TARGET
+            nodeName: STG_CUSTOMER
+        join:
+          joinCondition: FROM {{ ref('TARGET', 'STG_CUSTOMER') }} "STG_CUSTOMER"
+        name: ListFun_CUSTOMER
+        noLinkRefs: []
+  name: ListFun_CUSTOMER
+  overrideSQL: true
+  schema: ""
+  sqlType: View
+  type: sql
+  version: 1
+type: Node
