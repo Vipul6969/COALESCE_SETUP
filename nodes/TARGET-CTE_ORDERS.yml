@@ -1,11 +1,10 @@
 fileVersion: 1
-id: 234de172-f8fa-41f8-947e-397036410ae0
-name: DIM_ORDERS01
+id: 64b8593b-5dfc-4180-8b19-7a75130711d8
+name: CTE_ORDERS
 operation:
   config:
-    postSQL: ""
-    preSQL: ""
-    testsEnabled: true
+    insertStrategy: UNION
+    selectDistinct: false
   database: ""
   deployEnabled: true
   description: Orders data as defined by TPC-H
@@ -17,12 +16,11 @@ operation:
     columns:
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 3aa87f1d-620f-4532-8b04-0a4c02a05eb1
-          stepCounter: 234de172-f8fa-41f8-947e-397036410ae0
+          columnCounter: 3a69fcc2-fdc7-4233-8086-92863bb7d3f0
+          stepCounter: 64b8593b-5dfc-4180-8b19-7a75130711d8
         config: {}
         dataType: NUMBER
         description: ""
-        isChangeTracking: true
         name: DIM_ORDERS_KEY
         nullable: true
         sourceColumnReferences:
@@ -32,12 +30,11 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 7182e12d-9971-4d2c-bd52-506042be5c03
-          stepCounter: 234de172-f8fa-41f8-947e-397036410ae0
+          columnCounter: 369eebaa-fc4f-4007-b4dc-34f0d0917ec2
+          stepCounter: 64b8593b-5dfc-4180-8b19-7a75130711d8
         config: {}
         dataType: NUMBER(38,0)
         description: ""
-        isBusinessKey: true
         name: O_ORDERKEY
         nullable: false
         sourceColumnReferences:
@@ -47,8 +44,8 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: ab899f75-b051-46f2-b257-1098af0a6bc1
-          stepCounter: 234de172-f8fa-41f8-947e-397036410ae0
+          columnCounter: e8ac4bb5-b16d-4578-8ea2-13f2f605e4de
+          stepCounter: 64b8593b-5dfc-4180-8b19-7a75130711d8
         config: {}
         dataType: NUMBER(38,0)
         description: ""
@@ -61,8 +58,8 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: e403e904-9150-4e81-bed4-50ab2d3ba9f4
-          stepCounter: 234de172-f8fa-41f8-947e-397036410ae0
+          columnCounter: 4019fbdb-25aa-42fe-85da-00d4e5ce29be
+          stepCounter: 64b8593b-5dfc-4180-8b19-7a75130711d8
         config: {}
         dataType: VARCHAR(1)
         description: ""
@@ -75,8 +72,8 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 9389ee85-f0c9-45be-a761-0c9b7c1b6c30
-          stepCounter: 234de172-f8fa-41f8-947e-397036410ae0
+          columnCounter: dcefecd0-1bb4-49bf-b10c-5ce8768fcd9b
+          stepCounter: 64b8593b-5dfc-4180-8b19-7a75130711d8
         config: {}
         dataType: NUMBER(12,2)
         description: ""
@@ -89,8 +86,8 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: ea3e905a-8e39-440c-9c13-8dc509a4cf3f
-          stepCounter: 234de172-f8fa-41f8-947e-397036410ae0
+          columnCounter: 1256ad5e-24e6-428b-9d46-69a036c724f2
+          stepCounter: 64b8593b-5dfc-4180-8b19-7a75130711d8
         config: {}
         dataType: DATE
         description: ""
@@ -103,8 +100,8 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: cdfe4dbb-20a3-452e-933e-25c6c28b23de
-          stepCounter: 234de172-f8fa-41f8-947e-397036410ae0
+          columnCounter: 2cac605e-08e1-483f-8d25-62a2c52dacf8
+          stepCounter: 64b8593b-5dfc-4180-8b19-7a75130711d8
         config: {}
         dataType: VARCHAR(15)
         description: ""
@@ -117,8 +114,8 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 18de2374-6499-4867-95bd-30481ff5042e
-          stepCounter: 234de172-f8fa-41f8-947e-397036410ae0
+          columnCounter: 704a6e19-0508-4ad6-8d8e-c1961179ec16
+          stepCounter: 64b8593b-5dfc-4180-8b19-7a75130711d8
         config: {}
         dataType: VARCHAR(15)
         description: ""
@@ -131,8 +128,8 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: d8c74725-8b32-4ef1-a9c0-96cb08cca0fa
-          stepCounter: 234de172-f8fa-41f8-947e-397036410ae0
+          columnCounter: 42ed93c7-4b46-4fe7-82f8-b69223372855
+          stepCounter: 64b8593b-5dfc-4180-8b19-7a75130711d8
         config: {}
         dataType: NUMBER(38,0)
         description: ""
@@ -145,8 +142,8 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: eaa5c45c-45c1-449d-9e14-6cbb2b8233f8
-          stepCounter: 234de172-f8fa-41f8-947e-397036410ae0
+          columnCounter: 9213cbe1-90fc-406a-9638-c96e5322db1d
+          stepCounter: 64b8593b-5dfc-4180-8b19-7a75130711d8
         config: {}
         dataType: VARCHAR(79)
         description: ""
@@ -159,8 +156,8 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: f2a10349-9fd0-4ab6-adfb-617811741a4d
-          stepCounter: 234de172-f8fa-41f8-947e-397036410ae0
+          columnCounter: 45c6c07e-0fef-4787-a627-c7f309003960
+          stepCounter: 64b8593b-5dfc-4180-8b19-7a75130711d8
         config: {}
         dataType: NUMBER
         description: ""
@@ -173,8 +170,8 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 96c1fcff-ab75-4c7c-8bd3-5c3965e555ea
-          stepCounter: 234de172-f8fa-41f8-947e-397036410ae0
+          columnCounter: 0694bc78-b8c6-4412-827d-641d632c5209
+          stepCounter: 64b8593b-5dfc-4180-8b19-7a75130711d8
         config: {}
         dataType: VARCHAR
         description: ""
@@ -187,8 +184,8 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: cbaa41d4-eee0-4e15-9c44-76efc065649d
-          stepCounter: 234de172-f8fa-41f8-947e-397036410ae0
+          columnCounter: 9c9343b5-c248-45b9-9195-44abea589003
+          stepCounter: 64b8593b-5dfc-4180-8b19-7a75130711d8
         config: {}
         dataType: TIMESTAMP
         description: ""
@@ -201,8 +198,8 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: f84a8fc1-71f4-40df-bc8f-4951a923a8ae
-          stepCounter: 234de172-f8fa-41f8-947e-397036410ae0
+          columnCounter: ae22dd4d-c875-41f9-b6aa-fdc536bf46e7
+          stepCounter: 64b8593b-5dfc-4180-8b19-7a75130711d8
         config: {}
         dataType: TIMESTAMP
         description: ""
@@ -215,8 +212,8 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 4fbeda7f-be71-4be1-b11b-e156a78b5281
-          stepCounter: 234de172-f8fa-41f8-947e-397036410ae0
+          columnCounter: dd43760c-fd7f-41d8-baa4-e3c45f732afa
+          stepCounter: 64b8593b-5dfc-4180-8b19-7a75130711d8
         config: {}
         dataType: TIMESTAMP
         description: ""
@@ -229,8 +226,8 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 0f8895c2-ac47-4953-ac53-5b45b4227ffa
-          stepCounter: 234de172-f8fa-41f8-947e-397036410ae0
+          columnCounter: 1a3241ce-eadc-433e-8740-a3dce6291a0c
+          stepCounter: 64b8593b-5dfc-4180-8b19-7a75130711d8
         config: {}
         dataType: TIMESTAMP
         description: ""
@@ -248,8 +245,8 @@ operation:
         customSQL:
           customSQL: |-
             {{ stage('Override Create SQL') }}
-            	CREATE OR REPLACE VIEW {{ ref('TARGET', 'DIM_ORDERS01')}} AS (
-            		SELECT 
+            	CREATE OR REPLACE VIEW {{ ref('TARGET', 'CTE_ORDERS')}} AS (
+            		WITH orders AS (SELECT 
              "DIM_ORDERS_KEY" AS "DIM_ORDERS_KEY",
              "O_ORDERKEY" AS "O_ORDERKEY",
              "O_CUSTKEY" AS "O_CUSTKEY",
@@ -266,21 +263,24 @@ operation:
              "SYSTEM_END_DATE" AS "SYSTEM_END_DATE",
              "SYSTEM_CREATE_DATE" AS "SYSTEM_CREATE_DATE",
              "SYSTEM_UPDATE_DATE" AS "SYSTEM_UPDATE_DATE"
-             FROM {{ ref('TARGET', 'DIM_ORDERS') }}
-             WHERE TIMEDIFF('MINUTES',"SYSTEM_UPDATE_DATE",CURRENT_TIMESTAMP()) > 15
-              GROUP BY ALL
+             FROM {{ ref('TARGET', 'DIM_ORDERS') }})
+             SELECT
+             O_ORDERKEY
+             ,O_ORDERSTATUS
+             
+             FROM orders
             	)
         dependencies:
           - locationName: TARGET
             nodeName: DIM_ORDERS
         join:
           joinCondition: FROM {{ ref('TARGET', 'DIM_ORDERS') }} "DIM_ORDERS"
-        name: DIM_ORDERS01
+        name: CTE_ORDERS
         noLinkRefs: []
-  name: DIM_ORDERS01
-  overrideSQL: false
+  name: CTE_ORDERS
+  overrideSQL: true
   schema: ""
-  sqlType: Dimension
+  sqlType: View
   type: sql
   version: 1
 type: Node
