@@ -19,8 +19,8 @@ operation:
     insertStrategy: UNION ALL
     lagSpecification:
       items:
-        - lagPeriod: Seconds
-          lagValue: "60"
+        - lagPeriod: Minutes
+          lagValue: "1"
     refresh_mode: AUTO
     selectDistinct: false
     warehouseName: VHOL_CDC_WH
