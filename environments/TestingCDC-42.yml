@@ -1,0 +1,11 @@
+fileVersion: 1
+id: "42"
+mappingDefinitions:
+  GET_DATA:
+    database: VHOL_ENG_CDC
+    schema: ENG
+  TARGET:
+    database: VHOL_ENG_CDC
+    schema: TARGET
+name: TestingCDC
+type: Environment
