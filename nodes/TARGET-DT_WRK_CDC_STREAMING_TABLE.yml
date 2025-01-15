@@ -20,7 +20,7 @@ operation:
     lagSpecification:
       items:
         - lagPeriod: Seconds
-          lagValue: 60
+          lagValue: "60"
     refresh_mode: AUTO
     selectDistinct: false
     warehouseName: VHOL_CDC_WH
@@ -46,7 +46,7 @@ operation:
           - columnReferences:
               - columnCounter: 7444cbca-d367-4b07-bc2c-980100d2a1a4
                 stepCounter: f851ba1f-078f-467d-b247-09c2787e1a39
-            transform: "  UPPER(\"CDC_STREAMING_TABLE\".\"RECORD_CONTENT\")"
+            transform: "  UPPER( TO_VARIANT(\"CDC_STREAMING_TABLE\".\"RECORD_CONTENT\"))"
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
