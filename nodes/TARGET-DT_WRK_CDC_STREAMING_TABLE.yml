@@ -1,0 +1,69 @@
+fileVersion: 1
+id: 0f2f8362-dd82-47ee-9526-5549c35ee881
+name: DT_WRK_CDC_STREAMING_TABLE
+operation:
+  config:
+    baseLocation: ""
+    clusterKey: false
+    clusterKeyConfig:
+      items:
+        - {}
+    clusterKeyConfigExpressions:
+      items:
+        - {}
+    clusterKeyExpressions: false
+    downstreamOption: false
+    externalVolume: ""
+    groupByAll: false
+    initialize: ON_SCHEDULE
+    insertStrategy: UNION ALL
+    lagSpecification:
+      items:
+        - lagPeriod: Seconds
+          lagValue: 60
+    refresh_mode: AUTO
+    selectDistinct: false
+    warehouseName: VHOL_CDC_WH
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: TARGET
+  materializationType: dynamic table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7bc8dad1-e29a-46ea-8f57-f66caf52d698
+          stepCounter: 0f2f8362-dd82-47ee-9526-5549c35ee881
+        config: {}
+        dataType: VARIANT
+        description: ""
+        name: RECORD_CONTENT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7444cbca-d367-4b07-bc2c-980100d2a1a4
+                stepCounter: f851ba1f-078f-467d-b247-09c2787e1a39
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: GET_DATA
+            nodeName: CDC_STREAMING_TABLE
+        join:
+          joinCondition: FROM {{ ref('GET_DATA', 'CDC_STREAMING_TABLE') }} "CDC_STREAMING_TABLE"
+        name: DT_WRK_CDC_STREAMING_TABLE
+        noLinkRefs: []
+  name: DT_WRK_CDC_STREAMING_TABLE
+  overrideSQL: false
+  schema: ""
+  sqlType: Dynamic:::347
+  type: sql
+  version: 1
+type: Node
