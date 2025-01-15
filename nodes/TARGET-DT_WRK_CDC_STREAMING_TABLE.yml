@@ -46,7 +46,7 @@ operation:
           - columnReferences:
               - columnCounter: 7444cbca-d367-4b07-bc2c-980100d2a1a4
                 stepCounter: f851ba1f-078f-467d-b247-09c2787e1a39
-            transform: ""
+            transform: "  UPPER(\"CDC_STREAMING_TABLE\".\"RECORD_CONTENT\")"
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
