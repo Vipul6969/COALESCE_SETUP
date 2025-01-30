@@ -12,15 +12,14 @@ operation:
       items:
         - {}
     clusterKeyExpressions: false
-    downstreamOption: false
+    downstreamOption: true
     externalVolume: ""
     groupByAll: false
     initialize: ON_SCHEDULE
     insertStrategy: UNION ALL
     lagSpecification:
       items:
-        - lagPeriod: Seconds
-          lagValue: 60
+        - {}
     refresh_mode: INCREMENTAL
     selectDistinct: false
     warehouseName: COMPUTE_WH
