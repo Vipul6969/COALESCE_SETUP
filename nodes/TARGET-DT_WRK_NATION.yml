@@ -23,7 +23,7 @@ operation:
           lagValue: 60
     refresh_mode: INCREMENTAL
     selectDistinct: false
-    warehouseName: PC_COALESCE_WH
+    warehouseName: COMPUTE_WH
   database: ""
   deployEnabled: true
   description: Nation data as defined by TPC-H
