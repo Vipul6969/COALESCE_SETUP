@@ -1,0 +1,6 @@
+excludeSelector: ""
+fileVersion: 1
+id: "15"
+includeSelector: "+{ location: TARGET name: FCT_LINEITEM_ORDERS_DIM_LOOKUP }+"
+name: TestJOB
+type: Job

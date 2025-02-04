@@ -1,6 +1,0 @@
-excludeSelector: ""
-fileVersion: 1
-id: "13"
-includeSelector: "{ subgraph: \"REALTIME\" }"
-name: RealTime
-type: Job
