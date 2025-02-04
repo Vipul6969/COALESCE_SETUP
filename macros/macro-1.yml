@@ -1,0 +1,20 @@
+fileVersion: 1
+id: "1"
+macroString: |-
+  {% macro remove_dashes(column_name) %}
+      REPLACE({{ column_name }}, '-', '')
+  {% endmacro %}
+  
+  {% macro format_phone_number(column_name) %}
+      CONCAT(
+          LEFT({{ remove_dashes(column_name) }}, 3), '-',
+          SUBSTRING({{ remove_dashes(column_name) }}, 4, 2), '-',
+          RIGHT({{ remove_dashes(column_name) }}, 4)
+      )
+  {% endmacro %}
+  
+  {%- macro uppercase_col_data(column) -%}
+     UPPER({{ column }})
+  {%- endmacro %}
+name: macro
+type: Macro
