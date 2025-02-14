@@ -61,7 +61,7 @@ operation:
           - columnReferences:
               - columnCounter: 62daed2c-9cb2-40fa-ad76-b5b56d7f8192
                 stepCounter: 0998da9c-e4f7-4c69-a0d1-ac0cb1c25cdf
-            transform: UPPER("STG_CUSTOMER"."C_NAME")
+            transform: "{{uppercase_col_data('\"STG_CUSTOMER\".\"C_NAME\"')}}"
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 2514b8e1-a869-4c87-83f6-fa2ab2364fdd
@@ -96,7 +96,7 @@ operation:
           columnCounter: 568f50db-2d35-4100-acec-85b36204e3c4
           stepCounter: b4364680-8267-40b8-a89e-88de8cf07dfc
         config: {}
-        dataType: STRING
+        dataType: VARCHAR
         description: ""
         name: C_PHONE
         nullable: false
@@ -104,7 +104,7 @@ operation:
           - columnReferences:
               - columnCounter: ad0f4929-eef4-46a0-bee4-096dee335b35
                 stepCounter: 0998da9c-e4f7-4c69-a0d1-ac0cb1c25cdf
-            transform: UPPER("STG_CUSTOMER"."C_PHONE")
+            transform: "{{format_phone_number('\"STG_CUSTOMER\".\"C_PHONE\"')}}"
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 06d488c6-5d84-416a-8d0c-bc8304953507
